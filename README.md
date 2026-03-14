@@ -13,3 +13,8 @@ Set up ubuntu 24.04 based on the image provided [here](https://ubuntu.com/downlo
 ```bash
 sudo apt install openssh-server
 ```
+
+Development
+-----------
+
+This project uses [pre-commit](https://pre-commit.com/).
