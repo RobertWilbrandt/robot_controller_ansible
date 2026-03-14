@@ -1,0 +1,11 @@
+---
+- name: Xilinx K26 setup
+  hosts: robot-controller-01
+  tasks:
+    - name: Add xilinx ppas
+      ansible.builtin.apt_repository:
+        repo: ppa:ubuntu-xilinx/default
+    - name: Install xilinx packages
+      ansible.builtin.apt:
+        pkg:
+          - kria-k26-bootfw  # Firmware
